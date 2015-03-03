@@ -1,2 +1,2 @@
-$LOAD_PATH << File.expand_path('home/local/OPTIMUSDOM/ubuntu63/cuke/lib',__FILE__)
+$LOAD_PATH << File.expand_path('/acd/lib',__FILE__)
 require 'myClasses'
