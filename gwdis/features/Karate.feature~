@@ -1,0 +1,13 @@
+Feature:Traditional karate
+
+Scenario:Where is the Master?
+Given I navigate to Google
+When I enter <karateStyle> into the search field
+Then the text <masterSiurname> should be present 
+Examples:
+| karateStyle  | masterSurname |
+| Wado         | Ohtsuka       |
+| Shotokan     | Funakoshi     |
+| Goju         | Miyagi        |
+| Kyokushinkai | Oyama         |
+

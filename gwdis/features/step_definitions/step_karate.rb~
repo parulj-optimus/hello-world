@@ -1,0 +1,18 @@
+
+
+Given(/^I navigate to Google$/) do
+@browser.goto "http://www.google.co.uk"
+end
+
+When(/^I enter (.*) into the search field$/) do | Karate |
+  searchField=@browser.text_field(:name,'q')
+searchButton=@browser.button(:name,'btnG')
+searchField.set Karate
+searchButton.click
+end
+
+Then(/^the text (.*) should be present$/) do | Surname |
+  @browser.div(:id=>'resultStats').wait_until_present
+(@browser.text.include? Surname ).should==true
+end
+

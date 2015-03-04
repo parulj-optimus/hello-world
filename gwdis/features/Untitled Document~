@@ -1,0 +1,6 @@
+Feature:Traditional karate
+
+Scenario:Where is the Master?
+GivenI navigate to Google
+When I enter wado into the search field
+Then the text Ohtsuka should be present 
